@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Heading Styling */
+h1 {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 130px;
+  color: #17211e;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin: 10px 50px;
+  box-shadow: 10px 10px 20px 30px rgba(167, 218, 86, 0.8);
+  text-align: center;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(rgb(29, 209, 29) 50%, #fff);
+}
+/* Drum Container*/
+#drum-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Panel Styling */
+#panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sound Box Styling */
+.soundBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  gap: 1rem;
+}
+
+/* Bilder Styling */
+.photo {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 20%;
+  box-shadow: 2px 2px 5px 10px black;
+  object-fit: cover;
+}
+/* Title Styling */
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Sound Btn Styling */
+.soundButton {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10%;
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px rgb(180, 217, 166);
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.2s;
+}
+
+/* Hover Effects til SoundBtn */
+.soundButton:hover {
+  background-color: rgb(28, 43, 152);
+  transform: scale(1.1);
+}
+
+/* legge til icon på hover */
+.soundButton:hover::before {
+  content: "🥁";
+  font-size: 1.5rem;
+}
